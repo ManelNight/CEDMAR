@@ -1,0 +1,2055 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "ca", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://dbpedia.org/ontology", "http://www.example.org/cedmar" ],
+    "title" : {
+      "en" : "CEDMAR Medical Device Ontology"
+    },
+    "iri" : "http://www.example.org/cedmar",
+    "version" : "1.0",
+    "author" : [ "Manel Baño Richart" ],
+    "description" : {
+      "en" : "Ontology for European Medical Devices and In Vitro Diagnostics (MDR/IVDR)."
+    },
+    "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Manel Baño Richart",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "CEDMAR Medical Device Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "82",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "83",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "85",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "77",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "87",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  }, {
+    "id" : "91",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "92",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "69",
+    "type" : "owl:Class"
+  }, {
+    "id" : "90",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "72",
+    "type" : "owl:Class"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  }, {
+    "id" : "95",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "97",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "99",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "105",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "71",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "101",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "65",
+    "type" : "owl:Class"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "128",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "owl:Class"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "0",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.example.org/cedmar#CybersecurityRisk",
+    "baseIri" : "http://www.example.org/cedmar",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CybersecurityRisk",
+      "en" : "Cybersecurity Risk"
+    },
+    "comment" : {
+      "en" : "Unauthorized access."
+    },
+    "id" : "1",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.example.org/cedmar#InVitroDiagnosticDevice",
+    "baseIri" : "http://www.example.org/cedmar",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InVitroDiagnosticDevice",
+      "en" : "IVD Device"
+    },
+    "comment" : {
+      "en" : "Examination of specimens."
+    },
+    "id" : "8",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.example.org/cedmar#InSituCorrection",
+    "baseIri" : "http://www.example.org/cedmar",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InSituCorrection",
+      "en" : "In Situ Correction"
+    },
+    "comment" : {
+      "en" : "Modification at facility."
+    },
+    "id" : "10",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://www.example.org/cedmar#InterferenceRisk",
+    "baseIri" : "http://www.example.org/cedmar",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InterferenceRisk",
+      "en" : "Interference Risk"
+    },
+    "comment" : {
+      "en" : "EMI interference."
+    },
+    "id" : "17",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "18",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "21",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.example.org/cedmar#DeviceSafety",
+    "baseIri" : "http://www.example.org/cedmar",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DeviceSafety",
+      "en" : "Device Safety Risk"
+    },
+    "comment" : {
+      "en" : "General safety risk."
+    },
+    "id" : "22",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "23",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "24",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "13",
+    "label" : {
+      "IRI-based" : "anyURI"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "25",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "7",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "28",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "29",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.example.org/cedmar#RiskClass",
+    "baseIri" : "http://www.example.org/cedmar",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RiskClass",
+      "en" : "Risk Class"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/cedmar#ClassIII",
+      "baseIri" : "http://www.example.org/cedmar",
+      "comment" : {
+        "en" : "Highest risk class under MDR."
+      },
+      "labels" : {
+        "IRI-based" : "ClassIII",
+        "en" : "Class III"
+      }
+    }, {
+      "iri" : "http://www.example.org/cedmar#ClassIIb",
+      "baseIri" : "http://www.example.org/cedmar",
+      "comment" : {
+        "en" : "High risk class under MDR."
+      },
+      "labels" : {
+        "IRI-based" : "ClassIIb",
+        "en" : "Class IIb"
+      }
+    } ],
+    "comment" : {
+      "en" : "Regulatory classification."
+    },
+    "id" : "27"
+  }, {
+    "iri" : "http://www.example.org/cedmar#Manufacturer",
+    "baseIri" : "http://www.example.org/cedmar",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Manufacturer",
+      "en" : "Manufacturer"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/cedmar#MAN-002",
+      "baseIri" : "http://www.example.org/cedmar",
+      "comment" : {
+        "en" : "Global manufacturer."
+      },
+      "labels" : {
+        "IRI-based" : "MAN-002",
+        "en" : "Abbott Medical Devices"
+      }
+    }, {
+      "iri" : "http://www.example.org/cedmar#MAN-001",
+      "baseIri" : "http://www.example.org/cedmar",
+      "comment" : {
+        "en" : "Multinational medical device manufacturer."
+      },
+      "labels" : {
+        "IRI-based" : "MAN-001",
+        "en" : "Medtronic plc"
+      }
+    } ],
+    "comment" : {
+      "en" : "Legal entity responsible for device."
+    },
+    "id" : "15"
+  }, {
+    "iri" : "http://www.example.org/cedmar#Recall",
+    "baseIri" : "http://www.example.org/cedmar",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Recall",
+      "en" : "Recall"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/cedmar#FSCA-002",
+      "baseIri" : "http://www.example.org/cedmar",
+      "annotations" : {
+        "hasStartDate" : [ {
+          "identifier" : "hasStartDate",
+          "language" : "undefined",
+          "value" : "2024-02-28T00:00:00",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "Recall for Micra AV."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-002",
+        "en" : "FSCA-002"
+      }
+    } ],
+    "comment" : {
+      "en" : "Return of device."
+    },
+    "id" : "32",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://www.example.org/cedmar#ActiveImplant",
+    "baseIri" : "http://www.example.org/cedmar",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ActiveImplant",
+      "en" : "Active Implant"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/cedmar#DEV-001",
+      "baseIri" : "http://www.example.org/cedmar",
+      "comment" : {
+        "en" : "Left ventricular assist device."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-001",
+        "en" : "HeartMate 3 LVAD"
+      }
+    }, {
+      "iri" : "http://www.example.org/cedmar#DEV-002",
+      "baseIri" : "http://www.example.org/cedmar",
+      "comment" : {
+        "en" : "Leadless cardiac pacemaker."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-002",
+        "en" : "Micra AV Pacemaker"
+      }
+    } ],
+    "comment" : {
+      "en" : "Active and implantable."
+    },
+    "id" : "34",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://dbpedia.org/ontology/Country",
+    "baseIri" : "http://dbpedia.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Country"
+    },
+    "attributes" : [ "external" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://www.example.org/cedmar#InferenceRisk",
+    "baseIri" : "http://www.example.org/cedmar",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InferenceRisk"
+    },
+    "id" : "53",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.example.org/cedmar#Device",
+    "baseIri" : "http://www.example.org/cedmar",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Device",
+      "en" : "Medical Device",
+      "ca" : "Dispositiu Mèdic"
+    },
+    "subClasses" : [ "34", "52", "57", "55", "8", "62" ],
+    "comment" : {
+      "en" : "Instrument intended for medical purposes.",
+      "ca" : "Qualsevol instrument, aparell o programari destinat a fins mèdics segons MDR."
+    },
+    "id" : "9"
+  }, {
+    "iri" : "http://www.example.org/cedmar#Risk",
+    "baseIri" : "http://www.example.org/cedmar",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Risk",
+      "en" : "Risk",
+      "ca" : "Risc Associat"
+    },
+    "subClasses" : [ "53", "1", "63", "17", "64", "65", "66", "67", "68", "69", "22", "70", "71", "72", "73", "74", "75" ],
+    "comment" : {
+      "en" : "Adverse event or failure.",
+      "ca" : "Probabilitat d'ocurrència d'un dany i la gravetat d'aquest dany."
+    },
+    "id" : "2"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "78",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "60",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "82",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "83",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "84",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "85",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "77",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "46",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "87",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.example.org/cedmar#SingleUseDevice",
+    "baseIri" : "http://www.example.org/cedmar",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SingleUseDevice",
+      "en" : "Single Use Device"
+    },
+    "comment" : {
+      "en" : "Used for single procedure."
+    },
+    "id" : "55",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "91",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.example.org/cedmar#SafetyAlert",
+    "baseIri" : "http://www.example.org/cedmar",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SafetyAlert",
+      "en" : "Safety Alert"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/cedmar#FSCA-001",
+      "baseIri" : "http://www.example.org/cedmar",
+      "comment" : {
+        "en" : "Safety alert for HeartMate 3."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-001",
+        "en" : "FSCA-001"
+      }
+    } ],
+    "comment" : {
+      "en" : "Field Safety Notice."
+    },
+    "id" : "92",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://www.example.org/cedmar#SelfTestDevice",
+    "baseIri" : "http://www.example.org/cedmar",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SelfTestDevice",
+      "en" : "Self-Test Device"
+    },
+    "comment" : {
+      "en" : "Used by laypersons."
+    },
+    "id" : "57",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.example.org/cedmar#PatientHarm",
+    "baseIri" : "http://www.example.org/cedmar",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PatientHarm",
+      "en" : "Patient Harm"
+    },
+    "comment" : {
+      "en" : "Physical injury."
+    },
+    "id" : "69",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "90",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.example.org/cedmar#DiagnosticError",
+    "baseIri" : "http://www.example.org/cedmar",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DiagnosticError",
+      "en" : "Diagnostic Error"
+    },
+    "comment" : {
+      "en" : "Error in diagnosis."
+    },
+    "id" : "72",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "81",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "20",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.example.org/cedmar#InjuryRisk",
+    "baseIri" : "http://www.example.org/cedmar",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InjuryRisk",
+      "en" : "Injury Risk"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/cedmar#RSK-003",
+      "baseIri" : "http://www.example.org/cedmar",
+      "comment" : {
+        "en" : "Thrombus formation on device."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-003",
+        "en" : "Device-related Thrombosis"
+      }
+    } ],
+    "comment" : {
+      "en" : "Risk of injury."
+    },
+    "id" : "74",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "95",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "50",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "97",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "5",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "99",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.example.org/cedmar#NearMissIncident",
+    "baseIri" : "http://www.example.org/cedmar",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NearMissIncident",
+      "en" : "Near Miss Incident"
+    },
+    "comment" : {
+      "en" : "Could have caused harm."
+    },
+    "id" : "105",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.example.org/cedmar#Incident",
+    "baseIri" : "http://www.example.org/cedmar",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Incident",
+      "en" : "Incident",
+      "ca" : "Incident de Vigilància"
+    },
+    "subClasses" : [ "101", "105" ],
+    "comment" : {
+      "en" : "Vigilance event.",
+      "ca" : "Esdeveniment que afecta la seguretat o el funcionament normal del dispositiu."
+    },
+    "id" : "4"
+  }, {
+    "iri" : "http://www.example.org/cedmar#RadiationRisk",
+    "baseIri" : "http://www.example.org/cedmar",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RadiationRisk",
+      "en" : "Radiation Risk"
+    },
+    "comment" : {
+      "en" : "Radiation exposure."
+    },
+    "id" : "71",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.example.org/cedmar#ContaminationRisk",
+    "baseIri" : "http://www.example.org/cedmar",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ContaminationRisk",
+      "en" : "Contamination Risk"
+    },
+    "comment" : {
+      "en" : "Contamination."
+    },
+    "id" : "73",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.example.org/cedmar#ProductQuality",
+    "baseIri" : "http://www.example.org/cedmar",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ProductQuality",
+      "en" : "Product Quality Risk"
+    },
+    "comment" : {
+      "en" : "Defects."
+    },
+    "id" : "75",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.example.org/cedmar#SeriousIncident",
+    "baseIri" : "http://www.example.org/cedmar",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SeriousIncident",
+      "en" : "Serious Incident"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/cedmar#INC-001",
+      "baseIri" : "http://www.example.org/cedmar",
+      "comment" : {
+        "en" : "Incident for HeartMate 3."
+      },
+      "labels" : {
+        "IRI-based" : "INC-001",
+        "en" : "INC-001"
+      }
+    }, {
+      "iri" : "http://www.example.org/cedmar#INC-002",
+      "baseIri" : "http://www.example.org/cedmar",
+      "annotations" : {
+        "hasDetectDate" : [ {
+          "identifier" : "hasDetectDate",
+          "language" : "undefined",
+          "value" : "2024-02-01T00:00:00",
+          "type" : "label"
+        } ],
+        "hasEventDate" : [ {
+          "identifier" : "hasEventDate",
+          "language" : "undefined",
+          "value" : "2024-01-29T00:00:00",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "Incident for Micra AV."
+      },
+      "labels" : {
+        "IRI-based" : "INC-002",
+        "en" : "INC-002"
+      }
+    } ],
+    "comment" : {
+      "en" : "Led to death or serious injury."
+    },
+    "id" : "101",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.example.org/cedmar#InfectionRisk",
+    "baseIri" : "http://www.example.org/cedmar",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InfectionRisk",
+      "en" : "Infection Risk"
+    },
+    "comment" : {
+      "en" : "Risk of infection."
+    },
+    "id" : "63",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.example.org/cedmar#SoftwareRisk",
+    "baseIri" : "http://www.example.org/cedmar",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SoftwareRisk",
+      "en" : "Software Risk"
+    },
+    "comment" : {
+      "en" : "Software anomaly."
+    },
+    "id" : "65",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.example.org/cedmar#MaterialRisk",
+    "baseIri" : "http://www.example.org/cedmar",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MaterialRisk",
+      "en" : "Material Risk"
+    },
+    "comment" : {
+      "en" : "Material degradation."
+    },
+    "id" : "67",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.example.org/cedmar#DeviceFailure",
+    "baseIri" : "http://www.example.org/cedmar",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DeviceFailure",
+      "en" : "Device Failure"
+    },
+    "comment" : {
+      "en" : "Failure to perform."
+    },
+    "id" : "68",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.example.org/cedmar#ActiveDevice",
+    "baseIri" : "http://www.example.org/cedmar",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ActiveDevice",
+      "en" : "Active Device"
+    },
+    "comment" : {
+      "en" : "Depends on energy source."
+    },
+    "id" : "52",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.example.org/cedmar#UserNotice",
+    "baseIri" : "http://www.example.org/cedmar",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UserNotice",
+      "en" : "User Notice"
+    },
+    "comment" : {
+      "en" : "Information to users."
+    },
+    "id" : "128",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://www.example.org/cedmar#DevicePerformance",
+    "baseIri" : "http://www.example.org/cedmar",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DevicePerformance",
+      "en" : "Device Performance Risk"
+    },
+    "comment" : {
+      "en" : "Degradation in performance."
+    },
+    "id" : "66",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.example.org/cedmar#ImplantableDevice",
+    "baseIri" : "http://www.example.org/cedmar",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ImplantableDevice",
+      "en" : "Implantable Device"
+    },
+    "comment" : {
+      "en" : "Introduced into body."
+    },
+    "id" : "62",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.example.org/cedmar#MalfunctionRisk",
+    "baseIri" : "http://www.example.org/cedmar",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MalfunctionRisk",
+      "en" : "Malfunction Risk"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/cedmar#RSK-009",
+      "baseIri" : "http://www.example.org/cedmar",
+      "comment" : {
+        "en" : "Battery end-of-life earlier than specified."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-009",
+        "en" : "Battery depletion - premature"
+      }
+    } ],
+    "comment" : {
+      "en" : "Mechanical/electrical malfunction."
+    },
+    "id" : "64",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.example.org/cedmar#DiagnosticRisk",
+    "baseIri" : "http://www.example.org/cedmar",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DiagnosticRisk",
+      "en" : "Diagnostic Risk"
+    },
+    "comment" : {
+      "en" : "Risk in IVD."
+    },
+    "id" : "70",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.example.org/cedmar#CorrectiveAction",
+    "baseIri" : "http://www.example.org/cedmar",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CorrectiveAction",
+      "en" : "Corrective Action"
+    },
+    "subClasses" : [ "32", "128", "92", "10" ],
+    "comment" : {
+      "en" : "FSCA taken by manufacturer."
+    },
+    "id" : "11"
+  } ],
+  "property" : [ {
+    "id" : "3",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "14",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "30",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "31",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "36",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "37",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "38",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "39",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "40",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "41",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "42",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "43",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "44",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "45",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "47",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "48",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "49",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "58",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "59",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "61",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "76",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "79",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "80",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "86",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "88",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "89",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "93",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "94",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "96",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "98",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "100",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "102",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "103",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "104",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "106",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "107",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "108",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "109",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "110",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "111",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "112",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "113",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "114",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "115",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "116",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "117",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "118",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "119",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "120",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "121",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "122",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "123",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "124",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "125",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "126",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "127",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "129",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "130",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "131",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "132",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "133",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "134",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "135",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "136",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "137",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "138",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "139",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "140",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "141",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "142",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "143",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "144",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "145",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "146",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "147",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "148",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "149",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.example.org/cedmar#hasPriority",
+    "baseIri" : "http://www.example.org/cedmar",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "hasPriority",
+      "undefined" : "té prioritat"
+    },
+    "domain" : "4",
+    "attributes" : [ "datatype" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://www.example.org/cedmar#actionTaken",
+    "baseIri" : "http://www.example.org/cedmar",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "actionTaken",
+      "en" : "action taken"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Was action taken."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://www.example.org/cedmar#hasEudamedRef",
+    "baseIri" : "http://www.example.org/cedmar",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "hasEudamedRef",
+      "en" : "has Eudamed ref"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "EUDAMED URL reference."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://www.example.org/cedmar#locatedIn",
+    "baseIri" : "http://www.example.org/cedmar",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "locatedIn",
+      "en" : "located in"
+    },
+    "domain" : "15",
+    "comment" : {
+      "en" : "Relates a manufacturer to its geographical country."
+    },
+    "attributes" : [ "object" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://www.example.org/cedmar#hasRiskName",
+    "baseIri" : "http://www.example.org/cedmar",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "hasRiskName",
+      "en" : "has risk name"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Name of the risk."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "19"
+  }, {
+    "range" : "27",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://www.example.org/cedmar#hasAuthority",
+    "baseIri" : "http://www.example.org/cedmar",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "hasAuthority",
+      "en" : "has authority"
+    },
+    "domain" : "15",
+    "comment" : {
+      "en" : "Competent authority."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "30"
+  }, {
+    "iri" : "http://www.example.org/cedmar#hasDeviceName",
+    "baseIri" : "http://www.example.org/cedmar",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "hasDeviceName",
+      "en" : "has device name"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Commercial name."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://www.example.org/cedmar#actionAffectsDevice",
+    "baseIri" : "http://www.example.org/cedmar",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "actionAffectsDevice",
+      "en" : "action affects device"
+    },
+    "domain" : "11",
+    "comment" : {
+      "en" : "Inferred property linking action to device."
+    },
+    "attributes" : [ "object" ],
+    "id" : "33"
+  }, {
+    "range" : "2",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "35"
+  }, {
+    "range" : "27",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "36"
+  }, {
+    "range" : "27",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "37"
+  }, {
+    "range" : "27",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "38"
+  }, {
+    "range" : "2",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://www.example.org/cedmar#hasRiskClass",
+    "baseIri" : "http://www.example.org/cedmar",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "hasRiskClass",
+      "en" : "has risk class"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Relates a device to its regulatory risk class."
+    },
+    "attributes" : [ "object" ],
+    "id" : "40"
+  }, {
+    "range" : "2",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "41"
+  }, {
+    "range" : "15",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://www.example.org/cedmar#manufacturedIn",
+    "baseIri" : "http://www.example.org/cedmar",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "manufacturedIn",
+      "en" : "manufactured in"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Inferred property linking device to country."
+    },
+    "attributes" : [ "object" ],
+    "id" : "43"
+  }, {
+    "range" : "27",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "44"
+  }, {
+    "iri" : "http://www.example.org/cedmar#hasStatus",
+    "baseIri" : "http://www.example.org/cedmar",
+    "range" : "46",
+    "label" : {
+      "IRI-based" : "hasStatus",
+      "en" : "has status"
+    },
+    "domain" : "11",
+    "comment" : {
+      "en" : "Status of the action."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "45"
+  }, {
+    "range" : "15",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "47"
+  }, {
+    "range" : "4",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://www.example.org/cedmar#hasPatientAge",
+    "baseIri" : "http://www.example.org/cedmar",
+    "range" : "50",
+    "label" : {
+      "IRI-based" : "hasPatientAge",
+      "en" : "has patient age"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Age of patient."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "49"
+  }, {
+    "range" : "9",
+    "domain" : "52",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "51"
+  }, {
+    "range" : "9",
+    "domain" : "55",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "54"
+  }, {
+    "range" : "9",
+    "domain" : "57",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "56"
+  }, {
+    "iri" : "http://www.example.org/cedmar#hasFramework",
+    "baseIri" : "http://www.example.org/cedmar",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "hasFramework",
+      "en" : "has framework"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Regulatory framework MDR/IVDR."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "58"
+  }, {
+    "iri" : "http://www.example.org/cedmar#isReusable",
+    "baseIri" : "http://www.example.org/cedmar",
+    "range" : "60",
+    "label" : {
+      "IRI-based" : "isReusable",
+      "en" : "is reusable"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Is reusable device."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://www.example.org/cedmar#hasEmail",
+    "baseIri" : "http://www.example.org/cedmar",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "hasEmail",
+      "en" : "has email"
+    },
+    "domain" : "15",
+    "comment" : {
+      "en" : "Contact email."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://www.example.org/cedmar#isIVD",
+    "baseIri" : "http://www.example.org/cedmar",
+    "range" : "77",
+    "label" : {
+      "IRI-based" : "isIVD",
+      "en" : "is IVD"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Is in vitro diagnostic."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "76"
+  }, {
+    "range" : "9",
+    "domain" : "34",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "79"
+  }, {
+    "iri" : "http://www.example.org/cedmar#hasProbability",
+    "baseIri" : "http://www.example.org/cedmar",
+    "range" : "81",
+    "label" : {
+      "IRI-based" : "hasProbability",
+      "en" : "has probability"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Probability of occurrence."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "80"
+  }, {
+    "iri" : "http://www.example.org/cedmar#hasDescription",
+    "baseIri" : "http://www.example.org/cedmar",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "hasDescription",
+      "en" : "has description"
+    },
+    "domain" : "82",
+    "comment" : {
+      "en" : "General description."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "86"
+  }, {
+    "iri" : "http://www.example.org/cedmar#involvesDevice",
+    "baseIri" : "http://www.example.org/cedmar",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "involvesDevice",
+      "en" : "involves device"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Relates an incident to the medical device involved."
+    },
+    "attributes" : [ "object" ],
+    "id" : "88"
+  }, {
+    "iri" : "http://www.example.org/cedmar#hasPurpose",
+    "baseIri" : "http://www.example.org/cedmar",
+    "range" : "90",
+    "label" : {
+      "IRI-based" : "hasPurpose",
+      "en" : "has purpose"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Intended purpose."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "89"
+  }, {
+    "iri" : "http://www.example.org/cedmar#hasGeoScope",
+    "baseIri" : "http://www.example.org/cedmar",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "hasGeoScope",
+      "en" : "has geo scope"
+    },
+    "domain" : "11",
+    "comment" : {
+      "en" : "Geographic scope."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "93"
+  }, {
+    "iri" : "http://www.example.org/cedmar#exposedToRisk",
+    "baseIri" : "http://www.example.org/cedmar",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "exposedToRisk",
+      "en" : "exposed to risk"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Inferred property linking device to risk."
+    },
+    "attributes" : [ "object" ],
+    "id" : "94"
+  }, {
+    "iri" : "http://www.example.org/cedmar#isActive",
+    "baseIri" : "http://www.example.org/cedmar",
+    "range" : "83",
+    "label" : {
+      "IRI-based" : "isActive",
+      "en" : "is active"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Is active device."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "96"
+  }, {
+    "iri" : "http://www.example.org/cedmar#hasSeverity",
+    "baseIri" : "http://www.example.org/cedmar",
+    "range" : "87",
+    "label" : {
+      "IRI-based" : "hasSeverity",
+      "en" : "has severity"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Severity level."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "98"
+  }, {
+    "range" : "4",
+    "domain" : "101",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "100"
+  }, {
+    "range" : "2",
+    "domain" : "75",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "102"
+  }, {
+    "range" : "11",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "103"
+  }, {
+    "range" : "4",
+    "domain" : "105",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "104"
+  }, {
+    "range" : "2",
+    "domain" : "74",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "106"
+  }, {
+    "iri" : "http://www.example.org/cedmar#hasSRN",
+    "baseIri" : "http://www.example.org/cedmar",
+    "range" : "91",
+    "label" : {
+      "IRI-based" : "hasSRN",
+      "en" : "has SRN"
+    },
+    "domain" : "15",
+    "comment" : {
+      "en" : "Single Registration Number."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "107"
+  }, {
+    "iri" : "http://www.example.org/cedmar#resolvesIncident",
+    "baseIri" : "http://www.example.org/cedmar",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "resolvesIncident",
+      "en" : "resolves incident"
+    },
+    "domain" : "11",
+    "comment" : {
+      "en" : "Relates a corrective action (FSCA) to the incident it resolves."
+    },
+    "attributes" : [ "object" ],
+    "id" : "108"
+  }, {
+    "range" : "2",
+    "domain" : "73",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "109"
+  }, {
+    "range" : "2",
+    "domain" : "72",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "110"
+  }, {
+    "range" : "2",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "111"
+  }, {
+    "range" : "2",
+    "domain" : "69",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "112"
+  }, {
+    "range" : "2",
+    "domain" : "71",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "113"
+  }, {
+    "range" : "2",
+    "domain" : "70",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "114"
+  }, {
+    "range" : "2",
+    "domain" : "66",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "115"
+  }, {
+    "range" : "2",
+    "domain" : "65",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "116"
+  }, {
+    "range" : "2",
+    "domain" : "68",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "117"
+  }, {
+    "iri" : "http://www.example.org/cedmar#hasManufacturer",
+    "baseIri" : "http://www.example.org/cedmar",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "hasManufacturer",
+      "en" : "has manufacturer"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Relates a medical device to its manufacturer."
+    },
+    "attributes" : [ "object" ],
+    "id" : "118"
+  }, {
+    "range" : "2",
+    "domain" : "67",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "119"
+  }, {
+    "range" : "2",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "120"
+  }, {
+    "range" : "2",
+    "domain" : "63",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "121"
+  }, {
+    "range" : "2",
+    "domain" : "64",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "122"
+  }, {
+    "range" : "9",
+    "domain" : "62",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "123"
+  }, {
+    "iri" : "http://www.example.org/cedmar#hasReportDate",
+    "baseIri" : "http://www.example.org/cedmar",
+    "range" : "95",
+    "label" : {
+      "IRI-based" : "hasReportDate",
+      "en" : "has report date",
+      "undefined" : "data de report"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Date of report."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "124"
+  }, {
+    "range" : "9",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "125"
+  }, {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "126"
+  }, {
+    "range" : "2",
+    "domain" : "53",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "127"
+  }, {
+    "iri" : "http://www.example.org/cedmar#hasUDI",
+    "baseIri" : "http://www.example.org/cedmar",
+    "range" : "84",
+    "label" : {
+      "IRI-based" : "hasUDI",
+      "en" : "has UDI",
+      "undefined" : "té codi UDI"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Unique Device Identifier."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "129"
+  }, {
+    "iri" : "http://www.example.org/cedmar#hasLegalName",
+    "baseIri" : "http://www.example.org/cedmar",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "hasLegalName",
+      "en" : "has legal name",
+      "undefined" : "nom legal"
+    },
+    "domain" : "15",
+    "comment" : {
+      "en" : "Official legal name."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "130"
+  }, {
+    "range" : "4",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "131"
+  }, {
+    "range" : "15",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "132"
+  }, {
+    "range" : "2",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "133"
+  }, {
+    "range" : "27",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "134"
+  }, {
+    "range" : "9",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "135"
+  }, {
+    "range" : "4",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "136"
+  }, {
+    "range" : "15",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "137"
+  }, {
+    "range" : "2",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "138"
+  }, {
+    "iri" : "http://www.example.org/cedmar#hasOutcome",
+    "baseIri" : "http://www.example.org/cedmar",
+    "range" : "97",
+    "label" : {
+      "IRI-based" : "hasOutcome",
+      "en" : "has outcome"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Clinical outcome."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "139"
+  }, {
+    "range" : "11",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "140"
+  }, {
+    "range" : "9",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "141"
+  }, {
+    "iri" : "http://www.example.org/cedmar#isImplantable",
+    "baseIri" : "http://www.example.org/cedmar",
+    "range" : "85",
+    "label" : {
+      "IRI-based" : "isImplantable",
+      "en" : "is implantable"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Is implantable device."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "142"
+  }, {
+    "iri" : "http://www.example.org/cedmar#devicesAffected",
+    "baseIri" : "http://www.example.org/cedmar",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "devicesAffected",
+      "en" : "devices affected"
+    },
+    "domain" : "11",
+    "comment" : {
+      "en" : "Number of devices affected."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "143"
+  }, {
+    "iri" : "http://www.example.org/cedmar#hasPatientSex",
+    "baseIri" : "http://www.example.org/cedmar",
+    "range" : "99",
+    "label" : {
+      "IRI-based" : "hasPatientSex",
+      "en" : "has patient sex"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Sex of patient."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "144"
+  }, {
+    "iri" : "http://www.example.org/cedmar#reportedBy",
+    "baseIri" : "http://www.example.org/cedmar",
+    "range" : "78",
+    "label" : {
+      "IRI-based" : "reportedBy",
+      "en" : "reported by"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Reporting entity."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "145"
+  }, {
+    "iri" : "http://www.example.org/cedmar#causedByRisk",
+    "baseIri" : "http://www.example.org/cedmar",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "causedByRisk",
+      "en" : "caused by risk"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Relates an incident to the specific IMDRF risk that caused it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "146"
+  }, {
+    "range" : "11",
+    "domain" : "92",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "147"
+  }, {
+    "range" : "11",
+    "domain" : "128",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "148"
+  }, {
+    "range" : "11",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "149"
+  } ]
+}
