@@ -1,0 +1,1395 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.example.org/cedmar/"
+     xml:base="http://www.example.org/cedmar/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:cedmar="http://www.example.org/cedmar/#">
+    <owl:Ontology rdf:about="http://www.example.org/cedmar/">
+        <owl:versionIRI rdf:resource="http://www.example.org/cedmar/1.0.0"/>
+        <dc:creator>Manel Bañó Richart</dc:creator>
+        <dc:description xml:lang="en">Ontology for European Medical Devices and In Vitro Diagnostics (MDR/IVDR).</dc:description>
+        <dc:publisher>UOC - Universitat Oberta de Catalunya</dc:publisher>
+        <dc:title>CEDMAR Medical Device Ontology</dc:title>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <rdfs:comment xml:lang="en">Ontology for European Medical Devices and In Vitro Diagnostics (MDR/IVDR).</rdfs:comment>
+        <rdfs:label xml:lang="en">CEDMAR Medical Device Ontology</rdfs:label>
+        <owl:versionInfo>1.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/publisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- http://www.example.org/cedmar/#hasDetectDate -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.example.org/cedmar/#hasDetectDate"/>
+    
+
+
+    <!-- http://www.example.org/cedmar/#hasEventDate -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.example.org/cedmar/#hasEventDate"/>
+    
+
+
+    <!-- http://www.example.org/cedmar/#hasStartDate -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.example.org/cedmar/#hasStartDate"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#sameAs -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#sameAs"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.example.org/cedmar/#actionAffectsDevice -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/cedmar/#actionAffectsDevice">
+        <rdfs:domain rdf:resource="http://www.example.org/cedmar/#CorrectiveAction"/>
+        <rdfs:range rdf:resource="http://www.example.org/cedmar/#Device"/>
+        <rdfs:comment xml:lang="en">Inferred property linking action to device.</rdfs:comment>
+        <rdfs:label xml:lang="en">action affects device</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/cedmar/#causedByRisk -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/cedmar/#causedByRisk">
+        <rdfs:domain rdf:resource="http://www.example.org/cedmar/#Incident"/>
+        <rdfs:range rdf:resource="http://www.example.org/cedmar/#Risk"/>
+        <rdfs:comment xml:lang="en">Relates an incident to the specific IMDRF risk that caused it.</rdfs:comment>
+        <rdfs:label xml:lang="en">caused by risk</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/cedmar/#exposedToRisk -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/cedmar/#exposedToRisk">
+        <rdfs:domain rdf:resource="http://www.example.org/cedmar/#Device"/>
+        <rdfs:range rdf:resource="http://www.example.org/cedmar/#Risk"/>
+        <rdfs:comment xml:lang="en">Inferred property linking device to risk.</rdfs:comment>
+        <rdfs:label xml:lang="en">exposed to risk</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/cedmar/#hasManufacturer -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/cedmar/#hasManufacturer">
+        <rdfs:domain rdf:resource="http://www.example.org/cedmar/#Device"/>
+        <rdfs:range rdf:resource="http://www.example.org/cedmar/#Manufacturer"/>
+        <rdfs:comment xml:lang="en">Relates a medical device to its manufacturer.</rdfs:comment>
+        <rdfs:label xml:lang="en">has manufacturer</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/cedmar/#hasRiskClass -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/cedmar/#hasRiskClass">
+        <rdfs:domain rdf:resource="http://www.example.org/cedmar/#Device"/>
+        <rdfs:range rdf:resource="http://www.example.org/cedmar/#RiskClass"/>
+        <rdfs:comment xml:lang="en">Relates a device to its regulatory risk class.</rdfs:comment>
+        <rdfs:label xml:lang="en">has risk class</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/cedmar/#involvesDevice -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/cedmar/#involvesDevice">
+        <rdfs:domain rdf:resource="http://www.example.org/cedmar/#Incident"/>
+        <rdfs:range rdf:resource="http://www.example.org/cedmar/#Device"/>
+        <rdfs:comment xml:lang="en">Relates an incident to the medical device involved.</rdfs:comment>
+        <rdfs:label xml:lang="en">involves device</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/cedmar/#locatedIn -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/cedmar/#locatedIn">
+        <rdfs:domain rdf:resource="http://www.example.org/cedmar/#Manufacturer"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Country"/>
+        <rdfs:comment xml:lang="en">Relates a manufacturer to its geographical country.</rdfs:comment>
+        <rdfs:label xml:lang="en">located in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/cedmar/#manufacturedIn -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/cedmar/#manufacturedIn">
+        <rdfs:domain rdf:resource="http://www.example.org/cedmar/#Device"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Country"/>
+        <rdfs:comment xml:lang="en">Inferred property linking device to country.</rdfs:comment>
+        <rdfs:label xml:lang="en">manufactured in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/cedmar/#resolvesIncident -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/cedmar/#resolvesIncident">
+        <rdfs:domain rdf:resource="http://www.example.org/cedmar/#CorrectiveAction"/>
+        <rdfs:range rdf:resource="http://www.example.org/cedmar/#Incident"/>
+        <rdfs:comment xml:lang="en">Relates a corrective action (FSCA) to the incident it resolves.</rdfs:comment>
+        <rdfs:label xml:lang="en">resolves incident</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.example.org/cedmar/#actionTaken -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/cedmar/#actionTaken">
+        <rdfs:domain rdf:resource="http://www.example.org/cedmar/#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="en">Was action taken.</rdfs:comment>
+        <rdfs:label xml:lang="en">action taken</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/cedmar/#devicesAffected -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/cedmar/#devicesAffected">
+        <rdfs:domain rdf:resource="http://www.example.org/cedmar/#CorrectiveAction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="en">Number of devices affected.</rdfs:comment>
+        <rdfs:label xml:lang="en">devices affected</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/cedmar/#hasAuthority -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/cedmar/#hasAuthority">
+        <rdfs:domain rdf:resource="http://www.example.org/cedmar/#Manufacturer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Competent authority.</rdfs:comment>
+        <rdfs:label xml:lang="en">has authority</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/cedmar/#hasDescription -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/cedmar/#hasDescription">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">General description.</rdfs:comment>
+        <rdfs:label xml:lang="en">has description</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/cedmar/#hasDeviceName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/cedmar/#hasDeviceName">
+        <rdfs:domain rdf:resource="http://www.example.org/cedmar/#Device"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Commercial or trade name of the medical device.</rdfs:comment>
+        <rdfs:label xml:lang="en">has device name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/cedmar/#hasEmail -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/cedmar/#hasEmail">
+        <rdfs:domain rdf:resource="http://www.example.org/cedmar/#Manufacturer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Contact email.</rdfs:comment>
+        <rdfs:label xml:lang="en">has email</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/cedmar/#hasEudamedRef -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/cedmar/#hasEudamedRef">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:comment xml:lang="en">EUDAMED URL reference.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Eudamed ref</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/cedmar/#hasFramework -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/cedmar/#hasFramework">
+        <rdfs:domain rdf:resource="http://www.example.org/cedmar/#Device"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Regulatory framework MDR/IVDR.</rdfs:comment>
+        <rdfs:label xml:lang="en">has framework</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/cedmar/#hasGeoScope -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/cedmar/#hasGeoScope">
+        <rdfs:domain rdf:resource="http://www.example.org/cedmar/#CorrectiveAction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Regions or countries affected by a corrective action.</rdfs:comment>
+        <rdfs:label xml:lang="en">has geo scope</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/cedmar/#hasLegalName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/cedmar/#hasLegalName">
+        <rdfs:domain rdf:resource="http://www.example.org/cedmar/#Manufacturer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Official legal name.</rdfs:comment>
+        <rdfs:label xml:lang="en">has legal name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/cedmar/#hasOutcome -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/cedmar/#hasOutcome">
+        <rdfs:domain rdf:resource="http://www.example.org/cedmar/#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Clinical outcome.</rdfs:comment>
+        <rdfs:label xml:lang="en">has outcome</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/cedmar/#hasPatientAge -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/cedmar/#hasPatientAge">
+        <rdfs:domain rdf:resource="http://www.example.org/cedmar/#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="en">Age of patient.</rdfs:comment>
+        <rdfs:label xml:lang="en">has patient age</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/cedmar/#hasPatientSex -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/cedmar/#hasPatientSex">
+        <rdfs:domain rdf:resource="http://www.example.org/cedmar/#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Sex of patient.</rdfs:comment>
+        <rdfs:label xml:lang="en">has patient sex</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/cedmar/#hasPriority -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/cedmar/#hasPriority">
+        <rdfs:domain rdf:resource="http://www.example.org/cedmar/#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Priority of ocurrence</rdfs:comment>
+        <rdfs:label xml:lang="en">Has Priority</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/cedmar/#hasProbability -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/cedmar/#hasProbability">
+        <rdfs:domain rdf:resource="http://www.example.org/cedmar/#Risk"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Probability of occurrence.</rdfs:comment>
+        <rdfs:label xml:lang="en">has probability</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/cedmar/#hasPurpose -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/cedmar/#hasPurpose">
+        <rdfs:domain rdf:resource="http://www.example.org/cedmar/#Device"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Intended purpose.</rdfs:comment>
+        <rdfs:label xml:lang="en">has purpose</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/cedmar/#hasReportDate -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/cedmar/#hasReportDate">
+        <rdfs:domain rdf:resource="http://www.example.org/cedmar/#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment xml:lang="en">Date of report.</rdfs:comment>
+        <rdfs:label xml:lang="en">has report date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/cedmar/#hasRiskName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/cedmar/#hasRiskName">
+        <rdfs:domain rdf:resource="http://www.example.org/cedmar/#Risk"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Name of the risk.</rdfs:comment>
+        <rdfs:label xml:lang="en">has risk name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/cedmar/#hasSRN -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/cedmar/#hasSRN">
+        <rdfs:domain rdf:resource="http://www.example.org/cedmar/#Manufacturer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Single Registration Number.</rdfs:comment>
+        <rdfs:label xml:lang="en">has SRN</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/cedmar/#hasSeverity -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/cedmar/#hasSeverity">
+        <rdfs:domain rdf:resource="http://www.example.org/cedmar/#Risk"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Severity level.</rdfs:comment>
+        <rdfs:label xml:lang="en">has severity</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/cedmar/#hasStatus -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/cedmar/#hasStatus">
+        <rdfs:domain rdf:resource="http://www.example.org/cedmar/#CorrectiveAction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Status of the action.</rdfs:comment>
+        <rdfs:label xml:lang="en">has status</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/cedmar/#hasUDI -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/cedmar/#hasUDI">
+        <rdfs:domain rdf:resource="http://www.example.org/cedmar/#Device"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Unique Device Identifier.</rdfs:comment>
+        <rdfs:label xml:lang="en">has UDI</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/cedmar/#isActive -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/cedmar/#isActive">
+        <rdfs:domain rdf:resource="http://www.example.org/cedmar/#Device"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="en">Is active device.</rdfs:comment>
+        <rdfs:label xml:lang="en">is active</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/cedmar/#isIVD -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/cedmar/#isIVD">
+        <rdfs:domain rdf:resource="http://www.example.org/cedmar/#Device"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="en">Is in vitro diagnostic.</rdfs:comment>
+        <rdfs:label xml:lang="en">is IVD</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/cedmar/#isImplantable -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/cedmar/#isImplantable">
+        <rdfs:domain rdf:resource="http://www.example.org/cedmar/#Device"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="en">Is implantable device.</rdfs:comment>
+        <rdfs:label xml:lang="en">is implantable</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/cedmar/#isReusable -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/cedmar/#isReusable">
+        <rdfs:domain rdf:resource="http://www.example.org/cedmar/#Device"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="en">Is reusable device.</rdfs:comment>
+        <rdfs:label xml:lang="en">is reusable</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/cedmar/#reportedBy -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/cedmar/#reportedBy">
+        <rdfs:domain rdf:resource="http://www.example.org/cedmar/#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Reporting entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">reported by</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://dbpedia.org/ontology/Country -->
+
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Country">
+        <rdfs:comment xml:lang="en">Dbpedia Country</rdfs:comment>
+        <rdfs:label xml:lang="en">Country</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/cedmar/#ActiveDevice -->
+
+
+    <owl:Class rdf:about="http://www.example.org/cedmar/#ActiveDevice">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/cedmar/#Device"/>
+        <rdfs:comment xml:lang="en">Depends on energy source.</rdfs:comment>
+        <rdfs:label xml:lang="en">Active Device</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/cedmar/#ActiveImplant -->
+
+
+    <owl:Class rdf:about="http://www.example.org/cedmar/#ActiveImplant">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/cedmar/#Device"/>
+        <rdfs:comment xml:lang="en">Active and implantable.</rdfs:comment>
+        <rdfs:label xml:lang="en">Active Implant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/cedmar/#ContaminationRisk -->
+
+
+    <owl:Class rdf:about="http://www.example.org/cedmar/#ContaminationRisk">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/cedmar/#Risk"/>
+        <rdfs:comment xml:lang="en">Risk from biological, chemical, or particulate impurities.</rdfs:comment>
+        <rdfs:label xml:lang="en">Contamination Risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/cedmar/#CorrectiveAction -->
+
+
+    <owl:Class rdf:about="http://www.example.org/cedmar/#CorrectiveAction">
+        <rdfs:comment xml:lang="en">FSCA taken by manufacturer.</rdfs:comment>
+        <rdfs:label xml:lang="en">Corrective Action</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/cedmar/#CybersecurityRisk -->
+
+
+    <owl:Class rdf:about="http://www.example.org/cedmar/#CybersecurityRisk">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/cedmar/#Risk"/>
+        <rdfs:comment xml:lang="en">Unauthorized access.</rdfs:comment>
+        <rdfs:label xml:lang="en">Cybersecurity Risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/cedmar/#Device -->
+
+
+    <owl:Class rdf:about="http://www.example.org/cedmar/#Device">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.example.org/cedmar/#hasManufacturer"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.example.org/cedmar/#Manufacturer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.example.org/cedmar/#hasRiskClass"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.example.org/cedmar/#RiskClass"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Instrument intended for medical purposes.</rdfs:comment>
+        <rdfs:label xml:lang="en">Medical Device</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/cedmar/#DeviceFailure -->
+
+
+    <owl:Class rdf:about="http://www.example.org/cedmar/#DeviceFailure">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/cedmar/#Risk"/>
+        <rdfs:comment xml:lang="en">Failure to perform.</rdfs:comment>
+        <rdfs:label xml:lang="en">Device Failure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/cedmar/#DevicePerformance -->
+
+
+    <owl:Class rdf:about="http://www.example.org/cedmar/#DevicePerformance">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/cedmar/#Risk"/>
+        <rdfs:comment xml:lang="en">Degradation in performance.</rdfs:comment>
+        <rdfs:label xml:lang="en">Device Performance Risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/cedmar/#DeviceSafety -->
+
+
+    <owl:Class rdf:about="http://www.example.org/cedmar/#DeviceSafety">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/cedmar/#Risk"/>
+        <rdfs:comment xml:lang="en">General safety risk.</rdfs:comment>
+        <rdfs:label xml:lang="en">Device Safety Risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/cedmar/#DiagnosticError -->
+
+
+    <owl:Class rdf:about="http://www.example.org/cedmar/#DiagnosticError">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/cedmar/#Risk"/>
+        <rdfs:comment xml:lang="en">Error in diagnosis.</rdfs:comment>
+        <rdfs:label xml:lang="en">Diagnostic Error</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/cedmar/#DiagnosticRisk -->
+
+
+    <owl:Class rdf:about="http://www.example.org/cedmar/#DiagnosticRisk">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/cedmar/#Risk"/>
+        <rdfs:comment xml:lang="en">Risk in IVD.</rdfs:comment>
+        <rdfs:label xml:lang="en">Diagnostic Risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/cedmar/#ImplantableDevice -->
+
+
+    <owl:Class rdf:about="http://www.example.org/cedmar/#ImplantableDevice">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/cedmar/#Device"/>
+        <rdfs:comment xml:lang="en">Introduced into body.</rdfs:comment>
+        <rdfs:label xml:lang="en">Implantable Device</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/cedmar/#InSituCorrection -->
+
+
+    <owl:Class rdf:about="http://www.example.org/cedmar/#InSituCorrection">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/cedmar/#CorrectiveAction"/>
+        <rdfs:comment xml:lang="en">Modification at facility.</rdfs:comment>
+        <rdfs:label xml:lang="en">In Situ Correction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/cedmar/#InVitroDiagnosticDevice -->
+
+
+    <owl:Class rdf:about="http://www.example.org/cedmar/#InVitroDiagnosticDevice">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/cedmar/#Device"/>
+        <rdfs:comment xml:lang="en">Examination of specimens.</rdfs:comment>
+        <rdfs:label xml:lang="en">IVD Device</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/cedmar/#Incident -->
+
+
+    <owl:Class rdf:about="http://www.example.org/cedmar/#Incident">
+        <rdfs:comment xml:lang="en">Vigilance event.</rdfs:comment>
+        <rdfs:label xml:lang="en">Incident</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/cedmar/#InfectionRisk -->
+
+
+    <owl:Class rdf:about="http://www.example.org/cedmar/#InfectionRisk">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/cedmar/#Risk"/>
+        <rdfs:comment xml:lang="en">Risk of infection.</rdfs:comment>
+        <rdfs:label xml:lang="en">Infection Risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/cedmar/#InferenceRisk -->
+
+
+    <owl:Class rdf:about="http://www.example.org/cedmar/#InferenceRisk">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/cedmar/#Risk"/>
+        <rdfs:comment xml:lang="en">Risk derived from the data inference processes in medical software.</rdfs:comment>
+        <rdfs:label xml:lang="en">Inference Risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/cedmar/#InjuryRisk -->
+
+
+    <owl:Class rdf:about="http://www.example.org/cedmar/#InjuryRisk">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/cedmar/#Risk"/>
+        <rdfs:comment xml:lang="en">Risk of injury.</rdfs:comment>
+        <rdfs:label xml:lang="en">Injury Risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/cedmar/#InterferenceRisk -->
+
+
+    <owl:Class rdf:about="http://www.example.org/cedmar/#InterferenceRisk">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/cedmar/#Risk"/>
+        <rdfs:comment xml:lang="en">EMI interference.</rdfs:comment>
+        <rdfs:label xml:lang="en">Interference Risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/cedmar/#MalfunctionRisk -->
+
+
+    <owl:Class rdf:about="http://www.example.org/cedmar/#MalfunctionRisk">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/cedmar/#Risk"/>
+        <rdfs:comment xml:lang="en">Mechanical/electrical malfunction.</rdfs:comment>
+        <rdfs:label xml:lang="en">Malfunction Risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/cedmar/#Manufacturer -->
+
+
+    <owl:Class rdf:about="http://www.example.org/cedmar/#Manufacturer">
+        <rdfs:comment xml:lang="en">Legal entity responsible for device.</rdfs:comment>
+        <rdfs:label xml:lang="en">Manufacturer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/cedmar/#MaterialRisk -->
+
+
+    <owl:Class rdf:about="http://www.example.org/cedmar/#MaterialRisk">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/cedmar/#Risk"/>
+        <rdfs:comment xml:lang="en">Material degradation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Material Risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/cedmar/#NearMissIncident -->
+
+
+    <owl:Class rdf:about="http://www.example.org/cedmar/#NearMissIncident">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/cedmar/#Incident"/>
+        <rdfs:comment xml:lang="en">Could have caused harm.</rdfs:comment>
+        <rdfs:label xml:lang="en">Near Miss Incident</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/cedmar/#PatientHarm -->
+
+
+    <owl:Class rdf:about="http://www.example.org/cedmar/#PatientHarm">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/cedmar/#Risk"/>
+        <rdfs:comment xml:lang="en">Physical injury.</rdfs:comment>
+        <rdfs:label xml:lang="en">Patient Harm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/cedmar/#ProductQuality -->
+
+
+    <owl:Class rdf:about="http://www.example.org/cedmar/#ProductQuality">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/cedmar/#Risk"/>
+        <rdfs:comment xml:lang="en">Defect in manufacturing or performance degradation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Product Quality Risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/cedmar/#RadiationRisk -->
+
+
+    <owl:Class rdf:about="http://www.example.org/cedmar/#RadiationRisk">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/cedmar/#Risk"/>
+        <rdfs:comment xml:lang="en">Radiation exposure.</rdfs:comment>
+        <rdfs:label xml:lang="en">Radiation Risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/cedmar/#Recall -->
+
+
+    <owl:Class rdf:about="http://www.example.org/cedmar/#Recall">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/cedmar/#CorrectiveAction"/>
+        <rdfs:comment xml:lang="en">Return of device.</rdfs:comment>
+        <rdfs:label xml:lang="en">Recall</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/cedmar/#Risk -->
+
+
+    <owl:Class rdf:about="http://www.example.org/cedmar/#Risk">
+        <rdfs:comment xml:lang="en">Adverse event or failure.</rdfs:comment>
+        <rdfs:label xml:lang="en">Risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/cedmar/#RiskClass -->
+
+
+    <owl:Class rdf:about="http://www.example.org/cedmar/#RiskClass">
+        <rdfs:comment xml:lang="en">Regulatory classification.</rdfs:comment>
+        <rdfs:label xml:lang="en">Risk Class</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/cedmar/#SafetyAlert -->
+
+
+    <owl:Class rdf:about="http://www.example.org/cedmar/#SafetyAlert">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/cedmar/#CorrectiveAction"/>
+        <rdfs:comment xml:lang="en">Field Safety Notice.</rdfs:comment>
+        <rdfs:label xml:lang="en">Safety Alert</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/cedmar/#SelfTestDevice -->
+
+
+    <owl:Class rdf:about="http://www.example.org/cedmar/#SelfTestDevice">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/cedmar/#Device"/>
+        <rdfs:comment xml:lang="en">Used by laypersons.</rdfs:comment>
+        <rdfs:label xml:lang="en">Self-Test Device</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/cedmar/#SeriousIncident -->
+
+
+    <owl:Class rdf:about="http://www.example.org/cedmar/#SeriousIncident">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/cedmar/#Incident"/>
+        <rdfs:comment xml:lang="en">Led to death or serious injury.</rdfs:comment>
+        <rdfs:label xml:lang="en">Serious Incident</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/cedmar/#SingleUseDevice -->
+
+
+    <owl:Class rdf:about="http://www.example.org/cedmar/#SingleUseDevice">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/cedmar/#Device"/>
+        <rdfs:comment xml:lang="en">Used for single procedure.</rdfs:comment>
+        <rdfs:label xml:lang="en">Single Use Device</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/cedmar/#SoftwareRisk -->
+
+
+    <owl:Class rdf:about="http://www.example.org/cedmar/#SoftwareRisk">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/cedmar/#Risk"/>
+        <rdfs:comment xml:lang="en">Software anomaly.</rdfs:comment>
+        <rdfs:label xml:lang="en">Software Risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/cedmar/#UserNotice -->
+
+
+    <owl:Class rdf:about="http://www.example.org/cedmar/#UserNotice">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/cedmar/#CorrectiveAction"/>
+        <rdfs:comment xml:lang="en">Information to users.</rdfs:comment>
+        <rdfs:label xml:lang="en">User Notice</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://dbpedia.org/resource/Germany -->
+
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Germany"/>
+    
+
+
+    <!-- http://dbpedia.org/resource/Ireland -->
+
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Ireland"/>
+    
+
+
+    <!-- http://www.example.org/cedmar/#ClassIII -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/cedmar/#ClassIII">
+        <rdf:type rdf:resource="http://www.example.org/cedmar/#RiskClass"/>
+        <rdfs:comment xml:lang="en">Highest risk class under MDR.</rdfs:comment>
+        <rdfs:label xml:lang="en">Class III</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/cedmar/#ClassIIb -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/cedmar/#ClassIIb">
+        <rdf:type rdf:resource="http://www.example.org/cedmar/#RiskClass"/>
+        <rdfs:comment xml:lang="en">High risk class under MDR.</rdfs:comment>
+        <rdfs:label xml:lang="en">Class IIb</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/cedmar/#DEV-001 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/cedmar/#DEV-001">
+        <rdf:type rdf:resource="http://www.example.org/cedmar/#ActiveImplant"/>
+        <cedmar:hasManufacturer rdf:resource="http://www.example.org/cedmar/#MAN-001"/>
+        <cedmar:hasRiskClass rdf:resource="http://www.example.org/cedmar/#ClassIII"/>
+        <cedmar:hasDeviceName>HeartMate 3 LVAD</cedmar:hasDeviceName>
+        <cedmar:hasUDI>(01)00380740009095</cedmar:hasUDI>
+        <rdfs:comment xml:lang="en">Left ventricular assist device.</rdfs:comment>
+        <rdfs:label xml:lang="en">HeartMate 3 LVAD</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/cedmar/#DEV-002 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/cedmar/#DEV-002">
+        <rdf:type rdf:resource="http://www.example.org/cedmar/#ActiveImplant"/>
+        <cedmar:hasManufacturer rdf:resource="http://www.example.org/cedmar/#MAN-001"/>
+        <cedmar:hasRiskClass rdf:resource="http://www.example.org/cedmar/#ClassIII"/>
+        <cedmar:hasDeviceName>Micra AV Transcatheter Pacing System</cedmar:hasDeviceName>
+        <cedmar:hasFramework>MDR</cedmar:hasFramework>
+        <cedmar:hasPurpose>Leadless cardiac pacemaker for atrioventricular synchrony</cedmar:hasPurpose>
+        <cedmar:hasUDI>(01)00380740009112</cedmar:hasUDI>
+        <cedmar:isActive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</cedmar:isActive>
+        <cedmar:isIVD rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</cedmar:isIVD>
+        <cedmar:isImplantable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</cedmar:isImplantable>
+        <cedmar:isReusable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</cedmar:isReusable>
+        <rdfs:comment xml:lang="en">Leadless cardiac pacemaker.</rdfs:comment>
+        <rdfs:label xml:lang="en">Micra AV Pacemaker</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/cedmar/#FSCA-001 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/cedmar/#FSCA-001">
+        <rdf:type rdf:resource="http://www.example.org/cedmar/#SafetyAlert"/>
+        <cedmar:resolvesIncident rdf:resource="http://www.example.org/cedmar/#INC-001"/>
+        <cedmar:hasStatus>Open</cedmar:hasStatus>
+        <rdfs:comment xml:lang="en">Safety alert for HeartMate 3.</rdfs:comment>
+        <rdfs:label xml:lang="en">FSCA-001</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/cedmar/#FSCA-002 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/cedmar/#FSCA-002">
+        <rdf:type rdf:resource="http://www.example.org/cedmar/#Recall"/>
+        <cedmar:resolvesIncident rdf:resource="http://www.example.org/cedmar/#INC-002"/>
+        <cedmar:devicesAffected rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1240</cedmar:devicesAffected>
+        <cedmar:hasDescription>Voluntary recall due to premature battery depletion. Replacement units provided.</cedmar:hasDescription>
+        <cedmar:hasEudamedRef rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">EU-FSCA-2024-000002</cedmar:hasEudamedRef>
+        <cedmar:hasGeoScope>Micra AV lots manufactured between 2022-09 and 2023-03</cedmar:hasGeoScope>
+        <cedmar:hasStatus>Closed</cedmar:hasStatus>
+        <cedmar:hasStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-02-28T00:00:00</cedmar:hasStartDate>
+        <rdfs:comment xml:lang="en">Recall for Micra AV.</rdfs:comment>
+        <rdfs:label xml:lang="en">FSCA-002</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/cedmar/#INC-001 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/cedmar/#INC-001">
+        <rdf:type rdf:resource="http://www.example.org/cedmar/#SeriousIncident"/>
+        <cedmar:causedByRisk rdf:resource="http://www.example.org/cedmar/#RSK-003"/>
+        <cedmar:involvesDevice rdf:resource="http://www.example.org/cedmar/#DEV-001"/>
+        <cedmar:hasOutcome>Serious patient injury - embolic stroke</cedmar:hasOutcome>
+        <rdfs:comment xml:lang="en">Incident for HeartMate 3.</rdfs:comment>
+        <rdfs:label xml:lang="en">INC-001</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/cedmar/#INC-002 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/cedmar/#INC-002">
+        <rdf:type rdf:resource="http://www.example.org/cedmar/#SeriousIncident"/>
+        <cedmar:causedByRisk rdf:resource="http://www.example.org/cedmar/#RSK-009"/>
+        <cedmar:involvesDevice rdf:resource="http://www.example.org/cedmar/#DEV-002"/>
+        <cedmar:actionTaken rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</cedmar:actionTaken>
+        <cedmar:hasEudamedRef rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">EU-INC-2024-000002</cedmar:hasEudamedRef>
+        <cedmar:hasOutcome>Device malfunction - premature battery depletion</cedmar:hasOutcome>
+        <cedmar:hasPatientAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">72</cedmar:hasPatientAge>
+        <cedmar:hasPatientSex>Female</cedmar:hasPatientSex>
+        <cedmar:hasReportDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-02-03T00:00:00</cedmar:hasReportDate>
+        <cedmar:reportedBy>MAN-001</cedmar:reportedBy>
+        <cedmar:hasDetectDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-02-01T00:00:00</cedmar:hasDetectDate>
+        <cedmar:hasEventDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-01-29T00:00:00</cedmar:hasEventDate>
+        <rdfs:comment xml:lang="en">Incident for Micra AV.</rdfs:comment>
+        <rdfs:label xml:lang="en">INC-002</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/cedmar/#MAN-001 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/cedmar/#MAN-001">
+        <rdf:type rdf:resource="http://www.example.org/cedmar/#Manufacturer"/>
+        <cedmar:locatedIn rdf:resource="http://dbpedia.org/resource/Ireland"/>
+        <cedmar:hasAuthority>Health Products Regulatory Authority (HPRA)</cedmar:hasAuthority>
+        <cedmar:hasEmail>regulatory@medtronic.com</cedmar:hasEmail>
+        <cedmar:hasLegalName>Medtronic plc</cedmar:hasLegalName>
+        <cedmar:hasSRN>SRN-IE-MED-0001</cedmar:hasSRN>
+        <rdfs:comment xml:lang="en">Multinational medical device manufacturer.</rdfs:comment>
+        <rdfs:label xml:lang="en">Medtronic plc</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/cedmar/#MAN-002 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/cedmar/#MAN-002">
+        <rdf:type rdf:resource="http://www.example.org/cedmar/#Manufacturer"/>
+        <cedmar:locatedIn rdf:resource="http://dbpedia.org/resource/Germany"/>
+        <cedmar:hasLegalName>Abbott Laboratories</cedmar:hasLegalName>
+        <rdfs:comment xml:lang="en">Global manufacturer.</rdfs:comment>
+        <rdfs:label xml:lang="en">Abbott Medical Devices</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/cedmar/#RSK-003 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/cedmar/#RSK-003">
+        <rdf:type rdf:resource="http://www.example.org/cedmar/#InjuryRisk"/>
+        <cedmar:hasRiskName>Thrombosis - device-related</cedmar:hasRiskName>
+        <cedmar:hasSeverity>Critical</cedmar:hasSeverity>
+        <rdfs:comment xml:lang="en">Thrombus formation on device.</rdfs:comment>
+        <rdfs:label xml:lang="en">Device-related Thrombosis</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/cedmar/#RSK-009 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/cedmar/#RSK-009">
+        <rdf:type rdf:resource="http://www.example.org/cedmar/#MalfunctionRisk"/>
+        <cedmar:hasDescription>Battery end-of-life earlier than specified, risking therapy interruption</cedmar:hasDescription>
+        <cedmar:hasProbability>Low</cedmar:hasProbability>
+        <cedmar:hasRiskName>Battery depletion - premature</cedmar:hasRiskName>
+        <cedmar:hasSeverity>Critical</cedmar:hasSeverity>
+        <rdfs:comment xml:lang="en">Battery end-of-life earlier than specified.</rdfs:comment>
+        <rdfs:label xml:lang="en">Battery depletion - premature</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://www.example.org/cedmar#d">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.org/cedmar#m">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.org/cedmar#c">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.org/cedmar#i">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.org/cedmar#r">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Infers which devices are affected by a corrective action.</rdfs:comment>
+        <rdfs:label>Rule2_ActionAffects</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.example.org/cedmar/#resolvesIncident"/>
+                        <swrl:argument1 rdf:resource="http://www.example.org/cedmar#c"/>
+                        <swrl:argument2 rdf:resource="http://www.example.org/cedmar#i"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.example.org/cedmar/#involvesDevice"/>
+                                <swrl:argument1 rdf:resource="http://www.example.org/cedmar#i"/>
+                                <swrl:argument2 rdf:resource="http://www.example.org/cedmar#d"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.example.org/cedmar/#CorrectiveAction"/>
+                                        <swrl:argument1 rdf:resource="http://www.example.org/cedmar#c"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.example.org/cedmar/#actionAffectsDevice"/>
+                        <swrl:argument1 rdf:resource="http://www.example.org/cedmar#c"/>
+                        <swrl:argument2 rdf:resource="http://www.example.org/cedmar#d"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Infers the risk a device is exposed to based on its incidents.</rdfs:comment>
+        <rdfs:label>Rule1_ExposedToRisk</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.example.org/cedmar/#causedByRisk"/>
+                        <swrl:argument1 rdf:resource="http://www.example.org/cedmar#i"/>
+                        <swrl:argument2 rdf:resource="http://www.example.org/cedmar#r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.example.org/cedmar/#involvesDevice"/>
+                                <swrl:argument1 rdf:resource="http://www.example.org/cedmar#i"/>
+                                <swrl:argument2 rdf:resource="http://www.example.org/cedmar#d"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.example.org/cedmar/#Incident"/>
+                                        <swrl:argument1 rdf:resource="http://www.example.org/cedmar#i"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.example.org/cedmar/#exposedToRisk"/>
+                        <swrl:argument1 rdf:resource="http://www.example.org/cedmar#d"/>
+                        <swrl:argument2 rdf:resource="http://www.example.org/cedmar#r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Infers the manufacturing country of a device based on its manufacturer.</rdfs:comment>
+        <rdfs:label>Rule3_ManufacturedIn</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.example.org/cedmar/#Device"/>
+                        <swrl:argument1 rdf:resource="http://www.example.org/cedmar#d"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.example.org/cedmar/#locatedIn"/>
+                                <swrl:argument1 rdf:resource="http://www.example.org/cedmar#m"/>
+                                <swrl:argument2 rdf:resource="http://www.example.org/cedmar#c"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.example.org/cedmar/#hasManufacturer"/>
+                                        <swrl:argument1 rdf:resource="http://www.example.org/cedmar#d"/>
+                                        <swrl:argument2 rdf:resource="http://www.example.org/cedmar#m"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.example.org/cedmar/#manufacturedIn"/>
+                        <swrl:argument1 rdf:resource="http://www.example.org/cedmar#d"/>
+                        <swrl:argument2 rdf:resource="http://www.example.org/cedmar#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
